@@ -122,6 +122,7 @@ unregister_all_device_token(user_id)
 push_preferences(user_id)
 update_push_preferences(user_id, body)
 delete_push_preferences(user_id)
+my_group_channels(user_id, params={})
 ```  
 
 ### Sendbird::OpenChannelApi

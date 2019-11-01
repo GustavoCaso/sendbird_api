@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiesendbird.com/v3/users/cvilanova@path.travel/my_group_channels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Api-Token:
+      - <%= api_token %>
+      Content-Type:
+      - application/json, charset=utf8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sat, 09 Mar 2019 01:04:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '710'
+      Connection:
+      - keep-alive
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Language, Cookie, Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '{"channels":[{"invited_at":1550723155804,"custom_type":"messageThread","is_ephemeral":false,"freeze":false,"is_hidden":false,"is_push_enabled":true,"member_count":2,"my_role":"","last_message":{"custom_type":"","mentioned_users":[],"translations":{},"updated_at":0,"is_removed":false,"user":{"is_blocked_by_me":false,"nickname":"nirrrr","user_id":"nirrrr","profile_url":"","metadata":{}},"file":{},"message":"Hey
+        there!","data":"{}","type":"MESG","created_at":1550723156880,"mention_type":"users","channel_url":"sendbird_group_channel_19031773_daff0f4d3fc3974311123ca8134b126c242ac8cc","message_id":2156017472},"unread_mention_count":0,"member_state":"joined","joined_member_count":2,"channel_url":"sendbird_group_channel_19031773_daff0f4d3fc3974311123ca8134b126c242ac8cc","channel":{"name":"Testing_group","member_count":2,"custom_type":"messageThread","channel_url":"sendbird_group_channel_19031773_daff0f4d3fc3974311123ca8134b126c242ac8cc","created_at":1550723155,"cover_url":"https:\/\/sendbird.com\/main\/img\/cover\/cover_01.jpg","max_length_message":-1,"data":"{}"},"unread_message_count":0,"is_distinct":true,"is_muted":false,"hidden_state":"unhidden","cover_url":"https:\/\/sendbird.com\/main\/img\/cover\/cover_01.jpg","is_public":false,"data":"{}","is_super":false,"name":"Testing_group","created_at":1550723155,"is_access_code_required":false,"push_trigger_option":"default","max_length_message":-1,"inviter":null,"count_preference":"all"}],"next":""}'
+    http_version: 
+  recorded_at: Sat, 09 Mar 2019 01:04:56 GMT
+recorded_with: VCR 4.0.0

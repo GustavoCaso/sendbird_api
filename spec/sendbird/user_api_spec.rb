@@ -389,4 +389,21 @@ describe Sendbird::UserApi do
       expect(request.body).to eq({})
     end
   end
+
+  context 'My Group Channels' do
+    let(:request) do
+      create_dynamic_cassette("#{described_class}/my_group_channels") do
+        described_class.my_group_channels 'cvilanova@path.travel'
+      end
+    end
+
+    it do
+      expect(request.status).to eq 200
+    end
+
+    it do
+      expect(request.body['next']).to be_empty
+      expect(request.body['channels'].size).to eq 1
+    end
+  end
 end

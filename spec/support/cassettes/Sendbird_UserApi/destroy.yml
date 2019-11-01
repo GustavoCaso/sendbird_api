@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.2
       Api-Token:
-      - 37aeeccbd820e3c858570d6e5e418256470d5b56
+      - <%= api_token %>
       Content-Type:
       - application/json, charset=utf8
       Accept-Encoding:

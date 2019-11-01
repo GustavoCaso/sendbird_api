@@ -28,6 +28,10 @@ module Sendbird
         get(path: build_url(user_id, 'unread_count'))
       end
 
+      def my_group_channels(user_id, params={})
+        get(path: build_url(user_id, 'my_group_channels'), params: params)
+      end
+
       def activate(user_id, body)
         put(path: build_url(user_id, 'activate'), body: body)
       end
